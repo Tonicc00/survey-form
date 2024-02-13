@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Give us a feedback on your experience with freeCodeCamp</p>
+      <form id="survey-form" method="post">
+        <fieldset>
+          <label id="name-label" for="name">Name
+            <input id="name" name="name-label" type="text" placeholder="Enter your name" required>
+          </label>
+          <label id="email-label" for="email">Email
+            <input id="email" name="email-label" type="email" placeholder="Enter your email" required>
+          </label>
+          <label for="number" id="number-label">Age (optional)
+            <input id="number" name="number-label" type="number" min="17" max="120" placeholder="Age">
+          </label>
+          <label for="dropdown">Which option best describes your role
+            <select id="dropdown" name="dropdown">
+              <option value="">Select current role</option>
+              <option value="1">Student</option>
+              <option value="2">Full-time job</option>
+              <option value="3">Full-time learner</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>Would you reccomend freeCodeCamp to a friend?
+          <label for="definitely">
+            <input class="inline" checked value="definitely" id="definitely" name="recommend" type="radio"> Definitely
+          </label>
+          <label for="maybe">
+            <input class="inline" value="maybe" type="radio" id="maybe" name="recommend"> Maybe
+          </label>
+          <label for="not-sure">
+            <input class="inline" value="not-sure" id="not-sure" type="radio" name="recommend"> Not sure
+          </label>
+        </fieldset>
+        <fieldset>
+          What would you like to see improved? (Check all that apply)
+          <label>
+            <input class="inline" type="checkbox" value="front-end"> Front-end Projects
+          </label>
+          <label>
+            <input class="inline" type="checkbox" value="back-end"> Back-end Projects
+          </label>
+          <label>
+            <input class="inline" type="checkbox" value="data"> Data Visualization
+          </label>
+          <label>
+            <input class="inline" type="checkbox" value="challenges"> Challenges
+          </label>
+          <label>
+            <input class="inline" type="checkbox" value="videos"> Videos
+          </label>
+          <label>
+            <input class="inline" type="checkbox" value="forum"> Forum
+          </label>
+        </fieldset>
+        <fieldset>Any comments or suggestions?
+          <label for="comments">
+            <textarea placeholder="Enter your comment here..." id="comments" name="comments" rows="5" cols="50"></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
