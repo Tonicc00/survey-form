@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Survey form for freeCodeCamp experience.">
     <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css"/>
   </head>
@@ -10,7 +11,7 @@
     <div>
       <h1 id="title">Survey Form</h1>
       <p id="description">Give us a feedback on your experience with freeCodeCamp</p>
-      <form id="survey-form" method="post">
+      <form id="survey-form" method="get" action="final.html">
         <fieldset>
           <label id="name-label" for="name">Name
             <input id="name" name="name-label" type="text" placeholder="Enter your name" required>
@@ -69,7 +70,9 @@
           </label>
         </fieldset>
         <input id="submit" type="submit" value="Submit">
+        <!-- <a href="final.html"><button>Submit</button></a> -->
       </form>
     </div>
   </body>
+  <!-- <script src="app.js"></script> -->
 </html>

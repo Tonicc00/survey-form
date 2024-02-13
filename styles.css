@@ -7,13 +7,17 @@ body{
     font-family: Serif;
     font-size: 16px;
   }
-  div{
+  div, section{
     width:80vw;
     min-width:300px;
     max-width:600px;
     margin: 0 auto;
     padding:1rem;
     background-color: rgba(0, 0, 0, 0.15)
+  }
+  section{
+    display: block;
+    margin-top: 15%;
   }
   h1, p{
     text-align:center;
@@ -55,7 +59,7 @@ body{
     margin: 0 0.5rem;
     font-size:20px;
   }
-  input[type="submit"]{
+  /* input[type="submit"]{
     background-color:lightblue;
     font-size:16px;
     font-weight:bold;
@@ -67,5 +71,18 @@ body{
   }
   input[type="submit"]:active{
     background-color:#E0FFFF;
-  }
+  } */
   
+  button{
+    background-color:lightblue;
+    font-size:16px;
+    font-weight:bold;
+    color:#3b3b4f;
+  }
+  button:hover{
+    cursor:pointer;
+    background-color:#F0F8FF;
+  }
+  button:active{
+    background-color:#E0FFFF;
+  }
